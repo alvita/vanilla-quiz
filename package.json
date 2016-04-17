@@ -1,0 +1,14 @@
+{
+  "name": "pretest",
+  "version": "0.1.0",
+  "description": "pretest for vmfive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alvita",
+  "license": "ISC",
+  "dependencies": {
+    "vanilla-js": "0.0.1"
+  }
+}

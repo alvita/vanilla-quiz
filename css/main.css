@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px/1.5 verdana, arial, helvetica, sans-serif;
+	text-align: center; /* Takes care of horizontal alignment in Internet Explorer */
+}
+.centered{ 
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    margin: -150px 0 0 -150px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
