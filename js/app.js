@@ -82,11 +82,12 @@
 	}
 
 	var app =  new Application();
-	
+
 	window.onload = function() {
 
 		//detectOrientation();
 		setContent();
+		app.controller.shuffleImages();
 		app.controller.startCountdown();
 
 	}

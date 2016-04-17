@@ -17,6 +17,15 @@
 
 	};
 
+	Controller.prototype.shuffleImages = function(){
+		var me = this;
+		me.model.read(function(data){
+		
+			console.debug('controller read model ', data);
+			me.view.setImages(data);
+		})
+	};
+
 	// Export to window
 	window.app = window.app || {};
 	window.app.Controller = Controller;

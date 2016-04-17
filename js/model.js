@@ -5,13 +5,15 @@
 
 	}
 
-	Model.prototype.read = function(){
+	Model.prototype.read = function(callback){
 		console.debug('model read!!');
 		var i, ext = '.png', prefix = 'images/', images = [];
 		for(i=0; i < 12; i++){
 			images.push(prefix + i + ext);
 		}
-		console.debug('print model' , images);
+		images = window.shuffleArray(images);
+		console.debug('print shuffleImages: ' , images);
+		callback.apply(this, [ images ] );
 	};
 
 	// Export to window
