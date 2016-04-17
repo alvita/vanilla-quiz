@@ -1,6 +1,13 @@
 (function(){
 	'use strict';
 	var timer;
+
+	function Application() {
+		console.debug('Application constructor!!', window.app);	
+		this.model = new window.app.Model();	
+		this.view = new window.app.View();
+		this.controller = new window.app.Controller(this.model, this.view);
+	}
 	
 	function measureLayout(portion){
 		//width : height = 4 :3
@@ -73,9 +80,15 @@
 		boxEl.style.backgroundColor = 'black';
 
 	}
+
+	var app =  new Application();
+	
 	window.onload = function() {
+
 		//detectOrientation();
 		setContent();
+		app.controller.startCountdown();
+
 	}
 
 	window.onorientationchange = function(){

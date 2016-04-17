@@ -4,6 +4,10 @@ body {
 	font: 12px/1.5 verdana, arial, helvetica, sans-serif;
 	text-align: center; /* Takes care of horizontal alignment in Internet Explorer */
 }
+.timer{
+	color : white;
+	font-size: 20px;
+}
 .centered{ 
     background-color: black;
     height: 300px;
