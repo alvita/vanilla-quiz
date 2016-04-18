@@ -5,8 +5,12 @@ body {
 	text-align: center; /* Takes care of horizontal alignment in Internet Explorer */
 }
 .timer{
-	color : white;
-	font-size: 20px;
+	color : gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+	font-size: 50px;
+    z-index: 10;
 }
 .centered{ 
     background-color: black;
