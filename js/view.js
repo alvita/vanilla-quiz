@@ -54,7 +54,7 @@
 	View.prototype._appendImage = function(image){
 		var me = this;
 		//appends
-		//console.debug('img src: ',image);
+		//console.debug('img src: ',new DynamicImage());
 		var imgEl = document.createElement("img");
 		imgEl.setAttribute("src", image);
 		me.$box.appendChild(imgEl);
